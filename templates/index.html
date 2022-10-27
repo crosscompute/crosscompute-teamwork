@@ -16,9 +16,20 @@ gtag('config', 'G-VP9T2V7B17');
 body {
   font-family: sans-serif;
 }
+iframe {
+  border: none;
+  width: 100%;
+  height: 300px;
+}
 section h2 {
   display: flex;
   justify-content: space-between;
+}
+#menu > span {
+  position: absolute;
+  margin-left: 16px;
+  font-size: large;
+  font-weight: bold;
 }
 #menu img {
   max-width: 160px;
@@ -41,14 +52,15 @@ section h2 {
   main {
     max-width: calc(100vw - 160px - 16px - 16px);
   }
-  .mobile {
-    display: none;
-  }
   #menu {
     max-width: 160px;
     position: fixed;
     right: 8px;
     padding: 8px;
+  }
+  #menu > span {
+    position: relative;
+    margin-left: 35px;
   }
   #menu ul {
     display: block;
@@ -62,6 +74,7 @@ section h2 {
 {% block header_html %}
 <nav id="menu">
 <a href="{{ brand['asset_uri'] }}"><img class="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
+<span>Teamwork</span>
 <ul>
     <li><a href="#news">News</a></li>
     <li><a href="#requirements">Requirements</a></li>
@@ -112,7 +125,7 @@ section h2 {
 <section id="steps">
 <h2>How to Start</h2>
 {% for step in steps %}
-{{ step['asset_uri'] }}
+<iframe src="{{ step['asset_uri'] }}"></iframe>
 {% endfor %}
 </section>
 
@@ -131,10 +144,4 @@ section h2 {
 {% endfor %}
 </ul>
 </section>
-{% endblock %}
-
-{% block body_js %}
-for (const x of document.querySelectorAll('section h2')) {
-  x.innerHTML += '<a href="#" class="mobile">Top</a>';
-}
 {% endblock %}
