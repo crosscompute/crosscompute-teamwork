@@ -1,0 +1,51 @@
+---
+title: Build Your Idea
+description: Have an idea you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions.
+brand:
+  image_uri: images/brand.svg
+  asset_uri: https://academy.crosscompute.com
+
+news:
+  - description: Have an idea you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions.
+  - description: Accepting project applications for Spring 2023. Deadline is December 16, 2022. Sessions begin January 16, 2023 and end April 14, 2023.
+
+requirements:
+  - description: You want to build a web-based tool, report, dashboard or web application.
+  - description: You want to work on your idea together with a team.
+  - description: You want to take an active role in the development process.
+  - description: You think making stuff is fun!
+
+deliverables:
+  - description: 1 iteration of your idea
+  - description: 15 weekly team programming sessions on your idea
+
+prices:
+  - description: $3,000 per participant for 3 months
+  - description: $500 reimbursement if your project is published on [CrossCompute](https://crosscompute.net)
+
+steps:
+  - asset_uri: https://crosscompute.net/a/see-airport-traffic
+
+expectations:
+  - description: We'll help you build your idea.
+  - description: This is not a job placement service.
+
+links:
+  - name: Twitter
+    asset_uri: https://twitter.com/crosscompute
+  - name: Github
+    asset_uri: https://github.com/crosscompute
+  - name: YouTube
+    asset_uri: https://www.youtube.com/crosscompute
+  - name: LinkedIn
+    asset_uri: https://www.linkedin.com/company/crosscompute
+  - name: Facebook
+    asset_uri: https://www.facebook.com/crosscompute
+  - name: Tumblr
+    asset_uri: https://crosscompute.tumblr.com
+  - name: Discord
+    asset_uri: https://discord.com/channels/905104835639140393/905104836104691843
+  - name: Twitch
+    asset_uri: https://twitch.tv/crosscompute
+  - name: EventBrite
+    asset_uri: https://www.eventbrite.com/o/crosscompute-15688825369

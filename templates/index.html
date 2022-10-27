@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% block head_html %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP9T2V7B17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-VP9T2V7B17');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ description }}">
+<title>{{ title }}</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+section h2 {
+  display: flex;
+  justify-content: space-between;
+}
+#menu img {
+  max-width: 160px;
+}
+#menu ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+#links ul {
+  list-style: none;
+  padding-left: 0;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    max-width: calc(100vw - 160px - 16px - 16px);
+  }
+  .mobile {
+    display: none;
+  }
+  #menu {
+    max-width: 160px;
+    position: fixed;
+    right: 8px;
+    padding: 8px;
+  }
+  #menu ul {
+    display: block;
+    line-height: 2em;
+  }
+}
+</style>
+</style>
+{% endblock %}
+
+{% block header_html %}
+<nav id="menu">
+<a href="{{ brand['asset_uri'] }}"><img class="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
+<ul>
+    <li><a href="#news">News</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#deliverables">Deliverables</a></li>
+    <li><a href="#prices">Prices</a></li>
+    <li><a href="#steps">Steps</a></li>
+    <li><a href="#expectations">Expectations</a></li>
+    <li><a href="#links">Links</a></li>
+</ul>
+</nav>
+{% endblock %}
+
+{% block main_html %}
+<section id="news">
+<h1>{{ title }}</h1>
+{% for new in news %}
+<p>{{ new['description'] | safe }}</p>
+{% endfor %}
+</section>
+
+<section id="requirements">
+<h2>Who Should Apply</h2>
+<ul>
+{% for requirement in requirements %}
+<li>{{ requirement['description'] | safe }}</li>
+{% endfor %}
+</ul>
+</section>
+
+<section id="deliverables">
+<h2>What You Get</h2>
+<ul>
+{% for deliverable in deliverables %}
+<li>{{ deliverable['description'] | safe }}</li>
+{% endfor %}
+</ul>
+</section>
+
+<section id="prices">
+<h2>How Much It Costs</h2>
+<ul>
+{% for price in prices %}
+<li>{{ price['description'] | safe }}</li>
+{% endfor %}
+</ul>
+</section>
+
+<section id="steps">
+<h2>How to Start</h2>
+{% for step in steps %}
+{{ step['asset_uri'] }}
+{% endfor %}
+</section>
+
+<section id="expectations">
+<h2>What to Expect</h2>
+{% for expectation in expectations %}
+{{ expectation['description'] | safe }}
+{% endfor %}
+</section>
+
+<section id="links">
+<h2>Links</h2>
+<ul>
+{% for link in links %}
+<li><a href="{{ link['asset_uri'] }}">{{ link['name'] }}</a></li>
+{% endfor %}
+</ul>
+</section>
+{% endblock %}
+
+{% block body_js %}
+for (const x of document.querySelectorAll('section h2')) {
+  x.innerHTML += '<a href="#" class="mobile">Top</a>';
+}
+{% endblock %}
