@@ -1,28 +1,28 @@
-# CrossCompute Academy
+# CrossCompute Teamwork
 
-Here are source files for https://academy.crosscompute.com.
+Here are source files for https://teamwork.crosscompute.com.
 
 ## Installation
-
-1. Become root and make an SSH key.
-
-```bash
-sudo -s
-ssh-keygen -t ed25519 -C "crosscompute-academy-$(date +%Y%m%d-%H%M%S)"
-```
-
-2. [Add the SSH key as a deploy key to this repository](https://github.com/crosscompute/crosscompute-academy/settings/keys).
-3. Test the deploy key.
-
-```bash
-bash scripts/build.sh
-```
 
 Set up packages and services.
 
 ```bash
 bash scripts/setup-packages.sh
 bash scripts/setup-services.sh
+```
+
+Become root and make an SSH key.
+
+```bash
+sudo -s
+ssh-keygen -t ed25519 -C "crosscompute-teamwork-$(date +%Y%m%d-%H%M%S)"
+```
+
+[Add the SSH key as a deploy key to this repository](https://github.com/crosscompute/crosscompute-teamwork/settings/keys).
+
+```bash
+sudo -s
+bash scripts/build.sh
 ```
 
 ## Development

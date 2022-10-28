@@ -1,16 +1,16 @@
 #!/bin/bash
 TIMESTAMP=$(date +%Y%m%d-%H%M)
-FOLDER=/srv/crosscompute-homepage-$TIMESTAMP
+FOLDER=/srv/crosscompute-teamwork-$TIMESTAMP
 
-cd ~/Projects/crosscompute-homepage
-git checkout master
+cd ~/Projects/crosscompute-teamwork
+git checkout main
 git pull
 
 source \
-    ~/.virtualenvs/crosscompute-homepage/bin/activate
+    ~/.virtualenvs/crosscompute-teamwork/bin/activate
 python \
     scripts/build.py \
     datasets/configuration.yml \
     $FOLDER
 
-ln -snf $FOLDER /srv/crosscompute-homepage
+ln -snf $FOLDER /srv/crosscompute-teamwork

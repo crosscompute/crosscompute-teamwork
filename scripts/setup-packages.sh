@@ -2,16 +2,8 @@
 command -v python3 || sudo dnf install python3 -y
 
 python3 -m venv \
-    ~/.virtualenvs/crosscompute-homepage
+    ~/.virtualenvs/crosscompute-teamwork
 source \
-    ~/.virtualenvs/crosscompute-homepage/bin/activate
+    ~/.virtualenvs/crosscompute-teamwork/bin/activate
 
-pip install -U \
-    beautifulsoup4 \
-    crosscompute \
-    fastapi \
-    jinja2 \
-    markdown \
-    pip \
-    requests \
-    ruamel.yaml
+pip install -r requirements.txt
