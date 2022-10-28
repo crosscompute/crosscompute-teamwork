@@ -24,7 +24,7 @@ prices:
   - description: $500 reimbursement if your project is published on [CrossCompute](https://crosscompute.net)
 
 steps:
-  - asset_uri: https://crosscompute.net/a/see-airport-traffic?e
+  - asset_uri: https://crosscompute.net/a/gather-projects?_embed
 
 expectations:
   - description: We'll help you build your idea.
