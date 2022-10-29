@@ -1,23 +1,23 @@
 ---
-title: Build Your Idea
-description: Have an idea you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions.
+title: Build Your Web App
+description: Have a web app you want to build but keep putting off? Have a process you want to automate? We'll help you finish your project through weekly team programming sessions.
 brand:
   image_uri: images/brand.svg
   asset_uri: https://teamwork.crosscompute.com
 
 news:
-  - description: Have an idea you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions.
+  - description: Have a web app you want to build but keep putting off? Have a process you want to automate? We'll help you finish your project through weekly team programming sessions.
   - description: We are accepting project applications for Spring 2023. Application deadline is December 16, 2022. Teamwork sessions begin January 16, 2023 and end April 14, 2023.
 
 requirements:
   - description: You want to build a web-based tool, report, dashboard or web application.
-  - description: You want to work on your idea together with a team.
+  - description: You want to work on your app together with a team.
   - description: You want to take an active role in the development process.
   - description: You think making stuff is fun!
 
 deliverables:
-  - description: 1 iteration of your idea
-  - description: 15 weekly [team programming](https://ensembleprogramming.xyz) sessions on your idea
+  - description: 1 iteration of your app
+  - description: 15 weekly [team programming](https://ensembleprogramming.xyz) sessions on your app
 
 prices:
   - description: 1 free team programming session (apply below)
@@ -28,7 +28,7 @@ steps:
   - asset_uri: https://crosscompute.net/a/gather-projects?_embed
 
 expectations:
-  - description: We'll help you build your idea.
+  - description: We'll help you build your app.
   - description: This is not a job placement service.
 
 links:
