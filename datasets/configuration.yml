@@ -1,12 +1,12 @@
 ---
 title: Build Your Web App
-description: Have a web app you want to build but keep putting off? Have a process you want to automate? We'll help you finish your project through weekly team programming sessions.
+description: Have a web app you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions.
 brand:
   image_uri: images/brand.svg
   asset_uri: https://teamwork.crosscompute.com
 
 news:
-  - description: Have a web app you want to build but keep putting off? Have a process you want to automate? We'll help you finish your project through weekly team programming sessions.
+  - description: Have a web app you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions.
   - description: We are accepting project applications for Spring 2023. Application deadline is December 16, 2022. Teamwork sessions begin January 16, 2023 and end April 14, 2023.
 
 requirements:
@@ -30,8 +30,8 @@ steps:
 expectations:
   - description: We'll help you build your app.
   - description: This is not a job placement service.
-  - description: We have 16+ years of experience creating report automation systems and decision support tools for geospatial analysis.
-  - description: We specialize in operations research applied to electricity infrastructure planning.
+  - description: '[We have 16+ years of experience creating report automation systems and decision support tools for geospatial analysis](https://crosscompute.com/#accomplishments).'
+  - description: Our specialty is in operations research applied to electricity infrastructure planning.
 
 links:
   - name: Twitter
