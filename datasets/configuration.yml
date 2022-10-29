@@ -21,7 +21,7 @@ deliverables:
 
 prices:
   - description: 1 free team programming session (apply below)
-  - description: $3,000 per participant for 3 months, billed each month
+  - description: $3,000 per project for 3 months; $1,000 billed each month
   - description: $500 reimbursement if your project is featured on [CrossCompute](https://crosscompute.net)
 
 steps:
@@ -30,6 +30,8 @@ steps:
 expectations:
   - description: We'll help you build your app.
   - description: This is not a job placement service.
+  - description: We have 16+ years of experience creating report automation systems and decision support tools for geospatial analysis.
+  - description: We specialize in operations research applied to electricity infrastructure planning.
 
 links:
   - name: Twitter
